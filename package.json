@@ -1,0 +1,20 @@
+{
+  "name": "enjoysport_back",
+  "version": "1.0.0",
+  "description": "enjoySportBackModule",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "back",
+    "enjoySport"
+  ],
+  "author": "Tanguy BAYART",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^2.3.3"
+  }
+}
