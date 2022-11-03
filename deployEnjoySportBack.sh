@@ -3,6 +3,8 @@ TZ='Europe/Paris';
 echo "### deployEnjoySportBack.sh - `date` - Lancement du déploiement de EnjoySportBack"
 . $HOME/.bashrc
 
+dateD=`date +"%Y-%m-%d à %H:%M"`
+
 # récupération des sources
 echo "### deployEnjoySportBack.sh - `date` - récupération de sources"
 cd /home/iaam4644/EJ2repo/enjoySport_back
@@ -13,7 +15,9 @@ echo "### deployEnjoySportBack.sh - `date` - récupération de sourceses"
 ## npm install
 # npm i (TODO?)
 
-# deploiment date and version )) TODO in deployEnjoySport.sh
+# deploiment date
+sed "s/===dateDeploymentBack===/${dateD}/g" /home/iaam4644/EJ2repo/enjoySport_back/package.json >| /home/iaam4644/EJ2repo/enjoySport_back/package.json.tmp1
+mv /home/iaam4644/EJ2repo/enjoySport_back/package.json.tmp1 /home/iaam4644/EJ2repo/enjoySport_back/package.json
 
 
 # nettoyage/déploiement
