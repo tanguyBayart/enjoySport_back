@@ -9,6 +9,7 @@ cd /home/iaam4644/EJ2repo/enjoySport_back
 git reset --hard
 git pull https://github.com/tanguyBayart/enjoySport_back.git main
 echo "### deployEnjoySportBack.sh - `date` - récupération de sourceses"
+chmod 777 ./deployEnjoySportBack.sh
 
 ## npm install
 # npm i (TODO?)
