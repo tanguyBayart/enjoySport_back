@@ -23,8 +23,7 @@ echo "### deployEnjoySportBack.sh - `date` - Apache nettoye"
 
 
 echo "### deployEnjoySportBack.sh - `date` - Début du déploiement"
-cd dist/
-cp -r * ../../../public_html/esb
+cp -r * ../../public_html/esb
 
 echo "### deployEnjoySportBack.sh - `date` - Fin du déploiement"
 
